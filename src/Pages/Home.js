@@ -2,7 +2,6 @@ import React from 'react'
 
 import back0 from '../Pictures/back0.jpg'
 import back1 from '../Pictures/back1.jpg'
-import { relative } from 'path';
 
 var images = {
   0: `url(${back0})`,
