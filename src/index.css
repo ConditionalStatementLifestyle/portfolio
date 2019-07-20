@@ -87,6 +87,7 @@ a.nav-links {
   /* position: absolute; */
   font-family: 'Prata', serif;
   font-size: 25px;
+  margin-bottom: 80px;
 }
 
 .profile-pic {
@@ -96,4 +97,28 @@ a.nav-links {
   box-shadow: 2ch;
   border: 2px solid black;
   margin-top: 20px;
+}
+
+.right-home-container {
+  display: inline-block;
+  /* float: right; */
+  text-align: center;
+  /* width: 100%; */
+  margin-left: 250px;
+  margin-right: 250px;
+  font-size: 25px;
+  font-family: 'Prata', serif;
+  height: 600px;
+}
+
+.left-home-container {
+  display: inline-block;
+  /* float: left; */
+  text-align: center;
+  /* width: 100%; */
+  margin-left: 250px;
+  margin-right: 250px;
+  font-size: 25px;
+  font-family: 'Prata', serif;
+  height: 600px;
 }
