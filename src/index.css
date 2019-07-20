@@ -80,7 +80,13 @@ a.nav-links {
 .home-text {
   /* position: absolute; */
   font-family: 'Prata', serif;
-  font-size: 50px;
+  font-size: 40px;
+}
+
+.home-subtext {
+  /* position: absolute; */
+  font-family: 'Prata', serif;
+  font-size: 25px;
 }
 
 .profile-pic {
@@ -89,5 +95,5 @@ a.nav-links {
   border-radius: 8ch;
   box-shadow: 2ch;
   border: 2px solid black;
-  /* padding: 2px; */
+  margin-top: 20px;
 }

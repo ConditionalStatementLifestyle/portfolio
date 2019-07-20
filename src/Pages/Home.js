@@ -26,12 +26,15 @@ export default function Home() {
     return (
         <div style={ sectionStyle } className='home'>
           <div className='home-text-container'>
-            <div className='home-text'>
-              About text
-            </div>
-            <Col xs={6} md={4} >
+            <Col xs={6} md={4}>
               <Image src={jon} className='profile-pic' roundedCircle={true} />
             </Col>
+            <div className='home-text'>
+              Jon Langkammer
+            </div><br></br>
+            <div className='home-subtext'>
+              Full-Stack Web Developer
+            </div>
           </div>
         </div>
     )
