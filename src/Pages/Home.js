@@ -35,6 +35,12 @@ export default function Home() {
             <div className='home-subtext'>
               Full-Stack Web Developer
             </div>
+            <div className='left-home-container'>
+              Languages
+            </div>
+            <div className='right-home-container'>
+              Frameworks
+            </div>
           </div>
         </div>
     )
