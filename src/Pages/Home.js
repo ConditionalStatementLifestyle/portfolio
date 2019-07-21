@@ -26,9 +26,9 @@ export default function Home() {
     return (
         <div style={ sectionStyle } className='home'>
           <div className='home-text-container'>
-            <Col xs={6} md={4}>
+            <div className='profile-container'>
               <Image src={jon} className='profile-pic' roundedCircle={true} />
-            </Col>
+            </div>
             <div className='home-text'>
               Jon Langkammer
             </div><br></br>
@@ -36,10 +36,49 @@ export default function Home() {
               Full-Stack Web Developer
             </div>
             <div className='left-home-container'>
-              Languages
+              Languages & Frameworks
+              <div className='language-list-item'>
+                JavaScript
+              </div>
+              <div className='language-list-item'>
+                React
+              </div>
+              <div className='language-list-item'>
+                Ruby
+              </div>
+              <div className='language-list-item'>
+                Ruby on Rails
+              </div>
+              <div className='language-list-item'>
+                HTML
+              </div>
+              <div className='language-list-item'>
+                CSS
+              </div>
             </div>
             <div className='right-home-container'>
-              Frameworks
+              Technologies
+              <div className='language-list-item'>
+                Semantic UI
+              </div>
+              <div className='language-list-item'>
+                Action Cable (Web Sockets)
+              </div>
+              <div className='language-list-item'>
+                Chart.js
+              </div>
+              <div className='language-list-item'>
+                React CSS Transition Group
+              </div>
+              <div className='language-list-item'>
+                Web Scraping
+              </div>
+              <div className='language-list-item'>
+                React Router
+              </div>
+              <div className='language-list-item'>
+                React Pose
+              </div>
             </div>
           </div>
         </div>

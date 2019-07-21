@@ -34,7 +34,7 @@ a.nav-links {
 }
 
 .nav-link {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 30px;
   margin-left: 30px;
   margin-right: 30px;
@@ -97,15 +97,26 @@ a.nav-links {
   border-radius: 8ch;
   box-shadow: 2ch;
   border: 2px solid black;
-  margin-top: 20px;
+  margin-top: 40px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.profile-container {
+  text-align: center;
+  align-content: center;
 }
 
 .right-home-container {
+  float: right;
   display: inline-block;
-  /* float: right; */
+  position: relative;
+  /* float: left; */
   text-align: center;
   /* width: 100%; */
-  margin-left: 250px;
+  margin-left: 100px;
   margin-right: 250px;
   font-size: 40px;
   font-family: 'Prata', serif;
@@ -113,13 +124,24 @@ a.nav-links {
 }
 
 .left-home-container {
+  float: left;
   display: inline-block;
+  position: relative;
   /* float: left; */
   text-align: center;
   /* width: 100%; */
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: 100px;
+  margin-right: 100px;
   font-size: 40px;
   font-family: 'Prata', serif;
   height: 600px;
+}
+
+.language-list-item {
+  display: block;
+  font-size: 30px;
+  font-family: 'Prata', serif, cursive;
+  margin: 20px;
+  color: white;
+  text-shadow: #9d9d9d;
 }
