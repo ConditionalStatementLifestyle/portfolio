@@ -1,8 +1,10 @@
 import React from 'react'
-import { Transition, Button } from 'semantic-ui-react'
+import { Transition } from 'semantic-ui-react'
+import { withRouter } from "react-router-dom";
 
 
-export default class Intro extends React.Component {
+
+class Intro extends React.Component {
 
     constructor() {
         super()
@@ -12,7 +14,7 @@ export default class Intro extends React.Component {
     }
 
     componentWillMount() {
-        setInterval(this.toggleVisibility,2000)
+        setInterval(this.toggleVisibility,5000)
     }
 
     toggleVisibility = () => {
@@ -21,18 +23,20 @@ export default class Intro extends React.Component {
     }
     
     render() {
-        { visible } = this.state
+        const { visible } = this.state
         return (
             <div>
-                <Transition animation={'pulse'} duration={1500} visible={visible}>
+                <Transition animation={'pulse'} duration={4000} visible={visible}>
                     <div className='intro-words'>
                         Hi I'm Jon and I'm a full-stack web developer.
                     </div>
-                </Transition>>
-                <Button>
-                    <i></i>
-                </Button>
+                </Transition>
+                <button className="ui black button intro-button large" onClick={() => this.props.history.push('/home')}>
+                  Home
+                </button>
             </div>
         )
     }
 }
+
+export default withRouter(Intro)
