@@ -1,9 +1,9 @@
 import React from 'react'
-import { Col, Image } from 'react-bootstrap'
+import { Image } from 'react-bootstrap'
 
 import back0 from '../Pictures/back0.jpg'
 import back1 from '../Pictures/back1.jpg'
-import jon from '../Pictures/jon.jpg'
+import jon from '../Pictures/jon2.jpg'
 
 var images = {
   0: `url(${back0})`,
@@ -57,7 +57,7 @@ export default function Home() {
               </div>
             </div>
             <div className='right-home-container'>
-              Technologies
+              Technologies & Libraries 
               <div className='language-list-item'>
                 Semantic UI
               </div>
