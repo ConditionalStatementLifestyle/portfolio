@@ -114,20 +114,34 @@ a.nav-links {
   text-align: center;
   margin-left: auto; 
   margin-right: auto;
-  margin-top: 20px; 
-  margin-bottom: 20px; 
+  margin-top: 60px; 
+  margin-bottom: 60px; 
 }
 
-.center {
-  text-align: center;
-  margin-left: auto; 
-  margin-right: auto;
+.spacing {
+  margin-top: 60px; 
+  margin-bottom: 60px; 
+  margin: 50px;
 }
 
-/* .card-container {
+.card-container {
   text-align: center;
   align-content: center;
-} */
+}
+
+.profile-img {
+  width: 40%;
+  /* width: inherit; */
+  border-radius: 3ch;
+}
+
+.box {
+  /* width: 40%; */
+  border: 5px solid black;
+  /* padding: 50px; */
+  margin: 20px;
+  border-radius: 2ch;
+}
 
 
 /* PUT IN RESPONSIVE DESIGN RIGHT AWAY */

@@ -13,14 +13,14 @@ const projectsObject = [
         name: 'React Pictionary',
         frontend: 'React.js',
         backend: 'Rails (Action Cable)',
-        description: 'Live drawing pictionary application',
+        description: 'Live drawing pictionary game',
         url: 'https://github.com/jyang81/pictionary-react', 
         image: 'https://raw.githubusercontent.com/jyang81/pictionary-react/master/react-pictionary-screenshot.png'
     }, {
         name: 'Invest Big',
         frontend: 'Vanilla JavaScript',
         backend: 'Rails',
-        description: 'Simple compound interest modeling',
+        description: 'Simple compound interest modeling web app',
         url: 'https://secret-mesa-58919.herokuapp.com/', 
         image: 'https://github.com/ConditionalStatementLifestyle/InvestmentAnalyzer/raw/master/InvestBig.png'
     }
@@ -32,18 +32,10 @@ export default function Projects() {
         <div className='card-container'>
             { projectsObject.map(project => {
                 return (
-                    <div className='ui card center'>
-                        <div className="image">
-                            <img alt='oh no' src={project.image}/>
-                        </div>
-                        <div className="content">
-                            <div className="header">{project.name}</div>
-                            <div className="meta">
-                            <span className="date">Joined in 2013</span>
-                            </div>
-                            <div className="description">
-                            Kristy is an art director living in New York.
-                            </div>
+                    <div className='box'>
+                        <div className='spacing'>
+                            <h2>{project.name}</h2>
+                            <img className='profile-img' alt='oh no' src={project.image}></img>
                         </div>
                     </div>
                 )
@@ -51,3 +43,21 @@ export default function Projects() {
         </div>
     )
 }
+
+{/* <div className='ui card centered'>
+<div className="image">
+    <img alt='oh no' src={project.image}/>
+</div>
+<div className="content">
+    <div className="header">{project.name}</div>
+    <div className="meta">
+    <span className="date">{project.description}</span>
+    </div>
+    <div className="description">
+        Frontend: {project.frontend}
+    </div><br></br>
+    <div className="description">
+        Backend: {project.backend}
+    </div>
+</div>
+</div> */}
