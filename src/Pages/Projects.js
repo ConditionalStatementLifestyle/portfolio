@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectModal from '../Components/ProjectModal'
 
 const projectsObject = [
     {
@@ -37,6 +38,7 @@ export default function Projects() {
                             <h2>{project.name}</h2>
                             <img className='profile-img' alt='oh no' src={project.image}></img>
                         </div>
+                        <ProjectModal/>
                     </div>
                 )
             })}
