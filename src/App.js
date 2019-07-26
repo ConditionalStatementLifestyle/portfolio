@@ -7,6 +7,7 @@ import Projects from './Pages/Projects'
 import NotFound from './Pages/NotFound'
 import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom'
 import Navbar from './Components/Navbar'
+import BottomLinks from './Components/BottomLinks';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='*' render={() => <Redirect to='/404'/>} />
         </Switch>
       </Router>
+      <BottomLinks/>
     </div>
   );
 }
