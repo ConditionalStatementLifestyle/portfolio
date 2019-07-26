@@ -49,7 +49,8 @@ a.nav-links {
 }
 
 .navigation {
-  position: abosolute;
+  position: relative;
+  background:transparent;
   display: block;
   height: 70px;
   line-height: 70px;
@@ -81,7 +82,7 @@ a.nav-links {
   margin-left: auto;
   margin-right: auto;
   border-radius: 1ch;
-  margin-top: 5ch;
+  /* margin-top: 5ch; */
   /* position: relative; */
 }
 
@@ -135,12 +136,13 @@ a.nav-links {
   border-radius: 3ch;
 }
 
-.box {
-  /* width: 40%; */
-  /* border: 5px solid black; */
-  /* padding: 50px; */
-  /* margin: 20px; */
-  /* border-radius: 2ch; */
+.bottom-links {
+  display: block;
+  height: auto;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 40px;
+  margin-top: 100px;
 }
 
 
@@ -148,7 +150,8 @@ a.nav-links {
 
 @media screen and (max-width: 832px) {
 
-  .about {
+  .about-paragraph {
+    position: relative;
     margin-top: 20px;
     display: block;
     font-size: 15px;
@@ -248,10 +251,28 @@ a.nav-links {
   
 }
 
+@media screen and (max-width: 1036px) and (min-width: 833px) {
+  div.about-paragraph {
+    position: relative;
+    margin-top: 40px;
+    display: block;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: 'Prata', serif, cursive;
+    margin-left: 80px;
+    margin-right: 80px;
+    color: white;
+    text-shadow: #9d9d9d;
+    height:auto;
+    min-height:30px;
+    text-align: center;
+  }
+}
 
 @media screen and (min-width: 833px) {
 
-  div.about {
+  div.about-paragraph {
+    position: relative;
     margin-top: 40px;
     display: block;
     font-size: 25px;
@@ -263,7 +284,7 @@ a.nav-links {
     text-shadow: #9d9d9d;
     height:auto;
     min-height:30px;
-    text-align: center
+    text-align: center;
   }
 
   .nav-left-space {
