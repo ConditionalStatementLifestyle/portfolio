@@ -16,16 +16,21 @@ var sectionStyle = {
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
-  position: 'relative'
+  position: 'absolute'
 };
 
 export default function About() {
 
     return (
         <div style={ sectionStyle } className='home'>
-          <div className='home-text-container'>
-
-          </div>
+            <div className='about'>
+                Hi, my name is Jon and I'm a former electrical engineer with experience in the automation industry. 
+                After receiving my bachelor's degree in electrical engineering from the University of Minnesota, 
+                I took a job at a mid-size areospace supplier in Mukilteo, WA. During my tenure there, I was lucky 
+                enough to serve at lead electrical engineer on two medium size projects. One of which was a winglet boring
+                machine for the Boeing 777X. By far this was the most far reaching professional project I've ever been a part of, 
+                considering that every 777X wing will be touched by that machine. 
+            </div>
         </div>
     )
 }
