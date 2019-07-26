@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProjectModal from '../Components/ProjectModal'
 
 const projectsObject = [
@@ -27,23 +27,35 @@ const projectsObject = [
     }
 ]
 
-export default function Projects() {
+export default class Projects extends React.Component {
 
-    return (
-        <div className='card-container'>
-            { projectsObject.map(project => {
-                return (
-                    <div className='box'>
-                        <div className='spacing'>
-                            <h2>{project.name}</h2>
-                            <img className='profile-img' alt='oh no' src={project.image}></img>
+    state = {
+        open : false
+    }
+
+    toggleOpen = (name) => {
+        let open = !this.state.open
+        this.setState({ open })
+        console.log(name)
+    }
+
+    render() {
+        return (
+            <div className='card-container'>
+                { projectsObject.map(project => {
+                    return (
+                        <div className='box' onClick={() => this.toggleOpen(project.name)}>
+                            <div className='spacing'>
+                                <h2>{project.name}</h2>
+                                <img className='profile-img' alt='oh no' src={project.image}></img>
+                            </div>
+                            <ProjectModal open={this.state.open} toggleOpen={this.toggleOpen} projectInfo={project}/>
                         </div>
-                        <ProjectModal/>
-                    </div>
-                )
-            })}
-        </div>
-    )
+                    )
+                })}
+            </div>
+        )
+    }
 }
 
 {/* <div className='ui card centered'>

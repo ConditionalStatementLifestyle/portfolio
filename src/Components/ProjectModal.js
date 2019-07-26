@@ -1,28 +1,28 @@
-import React, { useState } from 'react'
-import { Button, Header, Image, Modal } from 'semantic-ui-react'
+import React from 'react'
+import { Button, Header, Modal } from 'semantic-ui-react'
 
 export default function ProjectModal(props) {
 
-    let [ open, setOpen ] = useState(false)
-
     return (
         <div>
-        <Button className='ui black button' onClick={() => setOpen(true)}>More Info</Button>
-        <Modal open={open} onClose={() => setOpen(false)}>
-          <Modal.Header>How do you feel about this beer?</Modal.Header>
-          <Modal.Content image>
-            <Modal.Description>
-              <Header size='large'>name</Header>
-              <Header>header</Header>
-              <div>info</div><br></br>
-            </Modal.Description>
-          </Modal.Content>
-          <Modal.Actions>
-            <Button color='black' onClick={() => setOpen(false)}>
-              Close
-            </Button><br></br><br></br>
-          </Modal.Actions>
-        </Modal>
-      </div>
+            {/* <Button className='ui black button' onClick={() => this.props.toggleOpen()}>More Info</Button> */}
+            <Modal open={props.open} onClose={() => props.toggleOpen()}>
+            <Modal.Header>{props.projectInfo.name}</Modal.Header>
+            <Modal.Content image>
+                <Modal.Description>
+                <Header size='large'>{props.projectInfo.description}</Header>
+                <div>Frontend:{props.projectInfo.frontend}</div><br></br>
+                <div>Backend:{props.projectInfo.backend}</div><br></br>
+                <div>Technologies:{props.projectInfo.technologies}</div><br></br>
+                <div><a href={props.projectInfo.url}>URL</a></div><br></br>
+                </Modal.Description>
+            </Modal.Content>
+            <Modal.Actions>
+                <Button color='black' onClick={() => props.toggleOpen()}>
+                Close
+                </Button><br></br><br></br>
+            </Modal.Actions>
+            </Modal>
+        </div>
     )
 }
