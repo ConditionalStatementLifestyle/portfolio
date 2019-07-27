@@ -1,4 +1,7 @@
 import React from 'react'
+import { Image } from 'react-bootstrap'
+import jon from '../Pictures/jon3.jpg'
+
 
 import back0 from '../Pictures/back0.jpg'
 import back1 from '../Pictures/back1.jpg'
@@ -22,6 +25,15 @@ export default function About() {
 
     return (
         <div style={ sectionStyle } className='about-background'>
+            <div className='profile-container'>
+                <Image src={jon} className='profile-pic' roundedCircle={true} />
+            </div>
+            <div className='home-text'>
+                Jon Langkammer
+            </div><br></br>
+            <div className='home-subtext'>
+                Full-Stack Web Developer
+            </div>
             <div className='about-paragraph'>
                 Hi, my name is Jon and I'm a former electrical engineer with experience in the automation industry. 
                 After receiving my bachelor's degree in electrical engineering from the University of Minnesota, 
