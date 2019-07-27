@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ProjectModal from '../Components/ProjectModal'
 
 const projectsObject = [
     {
         name: 'Hop Centricity',
         frontend: 'React.js',
-        backend: 'Rails',
+        backend: 'Ruby on Rails',
         description: 'An interactive beer rating web app, dedicated to IPAs',
         url: 'https://mysterious-reaches-84669.herokuapp.com/login',
         image: 'https://github.com/ConditionalStatementLifestyle/HopCentricity-React/raw/master/src/Pictures/ScreenShot.png',
@@ -13,43 +13,35 @@ const projectsObject = [
     }, {
         name: 'React Pictionary',
         frontend: 'React.js',
-        backend: 'Rails (Action Cable)',
+        backend: 'Ruby on Rails utilizing Action Cable',
         description: 'Live drawing pictionary game',
         url: 'https://github.com/jyang81/pictionary-react', 
-        image: 'https://raw.githubusercontent.com/jyang81/pictionary-react/master/react-pictionary-screenshot.png'
+        image: 'https://raw.githubusercontent.com/jyang81/pictionary-react/master/react-pictionary-screenshot.png',
+        technologies: 'Semantic UI, Web Sockets'
     }, {
         name: 'Invest Big',
         frontend: 'Vanilla JavaScript',
-        backend: 'Rails',
+        backend: 'Ruby on Rails',
         description: 'Simple compound interest modeling web app',
         url: 'https://secret-mesa-58919.herokuapp.com/', 
-        image: 'https://github.com/ConditionalStatementLifestyle/InvestmentAnalyzer/raw/master/InvestBig.png'
+        image: 'https://github.com/ConditionalStatementLifestyle/InvestmentAnalyzer/raw/master/InvestBig.png',
+        technologies: 'Chart.js'
     }
 ]
 
 export default class Projects extends React.Component {
-
-    state = {
-        open : false
-    }
-
-    toggleOpen = (name) => {
-        let open = !this.state.open
-        this.setState({ open })
-        console.log(name)
-    }
 
     render() {
         return (
             <div className='card-container'>
                 { projectsObject.map(project => {
                     return (
-                        <div className='box' onClick={() => this.toggleOpen(project.name)}>
-                            <div className='spacing'>
-                                <h2>{project.name}</h2>
+                        <div className='box'>
+                            <div className='spacing' >
+                                <div className='project-header'>{project.name}</div>
                                 <img className='profile-img' alt='oh no' src={project.image}></img>
                             </div>
-                            <ProjectModal open={this.state.open} toggleOpen={this.toggleOpen} projectInfo={project}/>
+                            <ProjectModal projectInfo={project}/>
                         </div>
                     )
                 })}
@@ -57,21 +49,3 @@ export default class Projects extends React.Component {
         )
     }
 }
-
-{/* <div className='ui card centered'>
-<div className="image">
-    <img alt='oh no' src={project.image}/>
-</div>
-<div className="content">
-    <div className="header">{project.name}</div>
-    <div className="meta">
-    <span className="date">{project.description}</span>
-    </div>
-    <div className="description">
-        Frontend: {project.frontend}
-    </div><br></br>
-    <div className="description">
-        Backend: {project.backend}
-    </div>
-</div>
-</div> */}
