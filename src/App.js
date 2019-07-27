@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Intro from './Pages/Intro'
-import Home from './Pages/Home'
+import Skills from './Pages/Skills'
 import About from './Pages/About'
 import Projects from './Pages/Projects'
 import NotFound from './Pages/NotFound'
@@ -18,7 +18,7 @@ function App() {
         <Switch>
           <Route exact path='/' render={() => <Redirect to='/intro'/>}/>
           <Route exact path='/intro' render={() => <Intro/>}/>
-          <Route exact path='/home' render={() => <Home/>}/>
+          <Route exact path='/skills' render={() => <Skills/>}/>
           <Route exact path='/about' render={() => <About/>}/>
           <Route exact path='/projects' render={() => <Projects/>}/>
           <Route exact path='/404' render={() => <NotFound />}/>

@@ -26,15 +26,6 @@ export default function Home() {
     return (
         <div style={ sectionStyle } className='home'>
           <div className='home-text-container'>
-            <div className='profile-container'>
-              <Image src={jon} className='profile-pic' roundedCircle={true} />
-            </div>
-            <div className='home-text'>
-              Jon Langkammer
-            </div><br></br>
-            <div className='home-subtext'>
-              Full-Stack Web Developer
-            </div>
             <div className='left-home-container'>
               Languages & Frameworks
               <div className='language-list-item'>
