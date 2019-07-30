@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Intro from './Pages/Intro'
+// import Intro from './Pages/Intro'
 import Skills from './Pages/Skills'
 import About from './Pages/About'
 import Projects from './Pages/Projects'
@@ -16,8 +16,8 @@ function App() {
       <Router>
         <Navbar/>
         <Switch>
-          <Route exact path='/' render={() => <Redirect to='/intro'/>}/>
-          <Route exact path='/intro' render={() => <Intro/>}/>
+          <Route exact path='/' render={() => <Redirect to='/about'/>}/>
+          {/* <Route exact path='/intro' render={() => <Intro/>}/> */}
           <Route exact path='/skills' render={() => <Skills/>}/>
           <Route exact path='/about' render={() => <About/>}/>
           <Route exact path='/projects' render={() => <Projects/>}/>
