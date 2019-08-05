@@ -1,6 +1,5 @@
-import React from 'react';
-import './App.css';
-// import Intro from './Pages/Intro'
+import React from 'react'
+import './App.css'
 import Skills from './Pages/Skills'
 import About from './Pages/About'
 import Projects from './Pages/Projects'
