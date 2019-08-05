@@ -149,12 +149,6 @@ a.nav-links {
   margin-top: 100px;
 }
 
-.project-header {
-  font-family: 'Prata', serif, cursive;
-  font-size: 6ch;
-  margin-bottom: 40px;
-}
-
 .about-text-background {
   background: rgba(0, 0, 0, 0.50);
   padding: 4px 8px;
@@ -272,6 +266,12 @@ a.nav-links {
     color: white;
     text-shadow: #9d9d9d;
   }
+
+  .project-header {
+    font-family: 'Prata', serif, cursive;
+    font-size: 3ch;
+    margin-bottom: 40px;
+  }
   
 }
 
@@ -386,6 +386,12 @@ a.nav-links {
     margin: 20px;
     color: white;
     text-shadow: #9d9d9d;
+  }
+
+  .project-header {
+    font-family: 'Prata', serif, cursive;
+    font-size: 6ch;
+    margin-bottom: 40px;
   }
 }
 
