@@ -1,5 +1,4 @@
 import React from 'react'
-import { Image } from 'react-bootstrap'
 
 import back0 from '../Pictures/back0.jpg'
 import back1 from '../Pictures/back1.jpg'
