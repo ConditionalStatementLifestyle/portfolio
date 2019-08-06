@@ -8,11 +8,15 @@ import NotFound from './Pages/NotFound'
 import {BrowserRouter as Router, Route, Redirect, Switch} from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import BottomLinks from './Components/BottomLinks';
+import Helmet from 'react-helmet';
 
 
 function App() {
   return (
     <div>
+      <Helmet>
+        <style>{'body { background-color: red; }'}</style>
+      </Helmet>
       <Router>
         <Navbar/>
         <Switch>

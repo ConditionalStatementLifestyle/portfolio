@@ -10,20 +10,20 @@ var images = {
   2: `url(${jon})`
 }
 
-var sectionStyle = {
-  width: "80%",
-  height: "1100px",
-  backgroundImage: images[1],
-  backgroundPosition: 'center',
-  backgroundRepeat: 'no-repeat',
-  backgroundSize: 'cover',
-  position: 'relative'
-};
+// var sectionStyle = {
+//   width: "80%",
+//   height: "1100px",
+//   // backgroundImage: images[1],
+//   backgroundPosition: 'center',
+//   backgroundRepeat: 'no-repeat',
+//   backgroundSize: 'cover',
+//   position: 'relative'
+// };
 
 export default function Home() {
 
     return (
-        <div style={ sectionStyle } className='home'>
+        <div className='home'>
           <div className='home-text-container'>
             <div className='left-home-container'>
               Languages & Frameworks
