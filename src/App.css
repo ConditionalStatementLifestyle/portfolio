@@ -170,7 +170,13 @@ a.nav-links {
   border-radius: 2ch;
 }
 
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 1049px) {
+
+  .skills-title {
+    font-size: 30px;
+    /* height: 60px; */
+    line-height: 40px;
+  }
 
   .about-background {
     padding-top: 20px;
@@ -254,7 +260,8 @@ a.nav-links {
   }
   
   .left-home-container {
-    display: inline-block;
+    margin-top: 40px;
+    display: block;
     position: relative;
     /* float: left; */
     text-align: center;
@@ -268,7 +275,7 @@ a.nav-links {
   }
 
   .right-home-container {
-    display: inline-block;
+    display: block;
     position: relative;
     /* float: left; */
     text-align: center;
@@ -298,7 +305,12 @@ a.nav-links {
   
 }
 
-@media screen and (min-width: 833px) {
+@media screen and (min-width: 1050px) {
+
+  .skills-title {
+    font-size: 70px;
+    margin-bottom: 60px;
+  }
 
   .about-background {
     padding-top: 20px;
@@ -333,7 +345,7 @@ a.nav-links {
   .nav-left-space {
     float: left;
     /* display: inline-block; */
-    font-size: 35px;
+    font-size: 25px;
     text-align: left;
     vertical-align: center;
     margin-left: 10px;
@@ -398,6 +410,7 @@ a.nav-links {
   }
   
   .left-home-container {
+    margin-top: 50px;
     display: block;
     position: relative;
     /* float: left; */
@@ -423,8 +436,8 @@ a.nav-links {
 
   .project-header {
     font-family: 'Prata', serif, cursive;
-    font-size: 6ch;
-    margin-bottom: 40px;
+    font-size: 8ch;
+    margin-bottom: 70px;
   }
 }
 
