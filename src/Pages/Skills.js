@@ -26,7 +26,9 @@ export default function Home() {
         <div className='home'>
           <div className='home-text-container'>
             <div className='left-home-container'>
-              Languages & Frameworks
+              <div className='skills-title'>
+                Languages & Frameworks
+              </div>
               <div className='language-list-item'>
                 JavaScript
               </div>
@@ -47,7 +49,9 @@ export default function Home() {
               </div>
             </div>
             <div className='right-home-container'>
-              Technologies & Libraries 
+              <div className='skills-title'>
+                Technologies & Libraries 
+              </div>
               <div className='language-list-item'>
                 Semantic UI
               </div>
