@@ -20,7 +20,6 @@ function App() {
         <Navbar/>
         <Switch>
           <Route exact path='/' render={() => <Redirect to='/about'/>}/>
-          {/* <Route exact path='/intro' render={() => <Intro/>}/> */}
           <Route exact path='/skills' render={() => <Skills/>}/>
           <Route exact path='/about' render={() => <About/>}/>
           <Route exact path='/projects' render={() => <Projects/>}/>
