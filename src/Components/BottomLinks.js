@@ -13,7 +13,10 @@ export default function BottomLinks() {
                 <button className="ui circular github icon button">
                     <i className="github icon"></i>
                 </button>
-            </a>
+            </a><br></br>
+            <div>
+                jlangkammer@gmail.com
+            </div>
         </div>
     )
 }
