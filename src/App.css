@@ -61,12 +61,6 @@
   }
 }
 
-.about-height {
-  height: 1500px;
-  align-content: center;
-  margin-top: 20ch;
-}
-
 .intro-button {
   margin-left: auto;
   margin-right: auto;
@@ -190,7 +184,13 @@ a.nav-links {
   }
 
   .about-background {
-    padding-top: 20px;
+    /* padding-top: 10px; */
+  }
+
+  .about-height {
+    height: 800px;
+    align-content: center;
+    margin-top: 8ch;
   }
 
   .about-paragraph {
@@ -206,6 +206,10 @@ a.nav-links {
     text-shadow: #9d9d9d;
     height:auto;
     min-height:30px;
+  }
+
+  .about-last-paragraph {
+    margin-bottom: 100px;
   }
 
   .navigation {
@@ -244,7 +248,7 @@ a.nav-links {
     /* position: absolute; */
     font-family: 'Prata', serif;
     font-size: 20px;
-    margin-top: 150px;
+    margin-top: 50px;
     color: black;
     text-align: center;
   }
@@ -261,11 +265,11 @@ a.nav-links {
   
   .profile-pic {
     height: 150px;
-    width: 150px;
-    border-radius: 10ch;
+    width: 170px;
+    border-radius: 6ch;
     box-shadow: 2ch;
-    /* border: 2px solid white; */
-    margin-top: 30px;
+    border: 5px solid white;
+    margin-top: 10px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -330,6 +334,12 @@ a.nav-links {
     padding-top: 20px;
   }
 
+  .about-height {
+    height: 1500px;
+    align-content: center;
+    margin-top: 20ch;
+  }
+
   .navigation {
     z-index: 2;
     position: fixed;
@@ -373,7 +383,7 @@ a.nav-links {
 
   .nav-link {
     font-family: 'Dancing Script', cursive;
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 50px;
     margin-right: 50px;
     vertical-align: center;

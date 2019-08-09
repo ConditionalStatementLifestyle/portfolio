@@ -2,6 +2,7 @@ import React from 'react'
 import { Image } from 'react-bootstrap'
 import jon from '../Pictures/jon3.jpg'
 import { Icon, Transition } from 'semantic-ui-react'
+import { Link } from "react-scroll";
 
 export default class About extends React.Component {
 
@@ -21,7 +22,6 @@ export default class About extends React.Component {
     componentWillUnmount() {
         clearInterval(this.toggleVisiblity)
     }
-
     
     render() {
         return (
@@ -37,14 +37,20 @@ export default class About extends React.Component {
                         <div className='home-subtext'>
                             Software Developer
                         </div>
-                        <Transition animation={'bounce'} duration={2000} visible={this.state.visible}>
+                        <Transition animation={'bounce'} duration={4000} visible={this.state.visible}>
                             <div className='centered'>
-                                <Icon name='angle down' color='black' size='massive' />
+                                <Link  
+                                    to="about"
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-200}
+                                    duration= {500}>
+                                    <Icon name='angle down' color='black' size='massive' />
+                                </Link>
                             </div>
                         </Transition>
                     </div>
-                    <div className='about-height'>
-                        {/* <div className='about-text-background'> */}
+                    <div id='about' className='about-height'>
                             <div className='about-paragraph'>
                                 Hi, my name is Jon and I'm a former electrical engineer with experience in the automation industry. 
                                 After receiving my bachelor's degree in electrical engineering from the University of Minnesota, 
@@ -67,7 +73,7 @@ export default class About extends React.Component {
                                 I'm looking to combine my newly found coding skills with my professional engineering experiences in a position as 
                                 a software engineer. 
                             </div>
-                            <div className='about-paragraph'>
+                            <div className='about-paragraph about-last-paragraph'>
                                 Outside of my professional endeavors, I am an avid outdoors person who loves hiking in the Cascades or Olympics, snowboarding 
                                 at Whistler or Steven's Pass, biking up some of Seattle's treacherous hills, playing tennis or table tennis, or playing frisbee. 
                                 Besides that, I am a music lover/musician and I thoroughly enjoy playing N64 games with others or playing a nice round of Halo 2, in 
