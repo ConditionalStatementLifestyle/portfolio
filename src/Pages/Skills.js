@@ -47,6 +47,9 @@ export default function Home() {
               <div className='language-list-item'>
                 CSS
               </div>
+              <div className='language-list-item'>
+                PostgreSQL
+              </div>
             </div>
             <div className='right-home-container'>
               <div className='skills-title'>
