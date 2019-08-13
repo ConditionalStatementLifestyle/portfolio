@@ -15,7 +15,7 @@ const projectsObject = [
         frontend: 'React.js',
         backend: 'Ruby on Rails utilizing Action Cable',
         description: 'Live drawing pictionary game',
-        url: 'https://github.com/jyang81/pictionary-react', 
+        url: 'https://react-pictionary.herokuapp.com/', 
         image: 'https://raw.githubusercontent.com/jyang81/pictionary-react/master/react-pictionary-screenshot.png',
         technologies: 'Semantic UI, Web Sockets'
     }, {
