@@ -24,7 +24,6 @@ export default function Navigation() {
 
   const updateWidth = () => {
     setWindowWidth(window.innerWidth)
-    console.log('width', windowWidth);
   }
 
   const setStyle = (marginLeft) => {
@@ -70,7 +69,8 @@ export default function Navigation() {
         </li>
         <hr className='hr' style={lineStyle} />
       </ul>
-      {windowWidth > 500 && <div className='nav-right-space'></div>}
+      {windowWidth >
+         500 && <div className='nav-right-space'></div>}
     </div>
   )
 }

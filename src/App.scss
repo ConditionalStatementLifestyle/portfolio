@@ -71,8 +71,6 @@ a.nav-links {
   color: black;
   text-decoration: none;
   display: inline-flex;
-  /* width: 120px; */
-  /* height: 120px; */
   z-index: 10;
 }
 
@@ -80,6 +78,19 @@ a.nav-links:hover {
   transition: 0.5s ease;
   color: #84786E;
   /* text-decoration: underline; */
+}
+
+.nav-link {
+  font-family: 'Prata', serif;
+  font-size: calc(0.7rem + 1vw);
+  width: 33%;
+  vertical-align: center;
+  color: black;
+  transition: font-size 0.5s ease;
+  display: inline-flex;
+  flex-direction: row; justify-content: center;
+  z-index: 10;
+  filter: blur(0);
 }
 
 ul li {
@@ -96,23 +107,6 @@ ul {
   padding:0
 }
 
-.nav-link {
-  /* font-family: 'Dancing Script', cursive; */
-  font-family: 'Prata', serif;
-  /* font-size: 30px; */
-  font-size: calc(0.7rem + 1vw);
-  width: 33%;
-  /* height: 120px; */
-  /* margin-left: 50px; */
-  /* margin-right: 50px; */
-  vertical-align: center;
-  color: black;
-  transition: font-size 0.5s ease;
-  display: inline-flex;
-  flex-direction: row; justify-content: center;
-  z-index: 10;
-  filter: blur(0);
-}
 
 .hr {
   height: 0.1rem;
@@ -202,21 +196,11 @@ ul {
   margin: 50px;
 }
 
-.box {
-  margin-bottom: 100px;
-}
-
 .card-container {
-  text-align: center;
-  align-content: center;
-  margin-top: 200px
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
-.profile-img {
-  width: 40%;
-  width: inherit;
-  border-radius: 3ch;
-} 
 
 .bottom-links {
   /* display: block; */
@@ -241,10 +225,11 @@ ul {
 
 
 .skills-title {
-  font-size: calc(30px + 2vw);
+  font-family: 'moon-light';
+  font-size: calc(10px + 5vw);
   line-height: calc(30px + 2vw);
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 50px;
   color: black;
 }
 
@@ -278,11 +263,12 @@ div.intro-paragraph {
   font-size: calc(10px + 1vw);
   line-height: calc(15px + 1vw);
   font-family: 'Prata', serif, cursive;
-  margin-top: 40px;
+  margin-top: 60px;
   color: black;
   height:auto;
   min-height:30px;
   text-align: center;
+  text-shadow: 0.7px 0.7px 0px rgb(157, 157, 157);
 }
 
 div.about-paragraph {
@@ -298,6 +284,7 @@ div.about-paragraph {
   height:auto;
   min-height:30px;
   text-align: center;
+  text-shadow: 0.7px 0.7px 0px rgb(157, 157, 157);
 }
 
 .nav-left-space {
@@ -333,7 +320,6 @@ div.about-paragraph {
 }
 
 .profile-pic {
-  box-shadow: 2ch;
   margin-top: 10px;
   text-align: center;
   margin-left: 50px;
@@ -382,12 +368,12 @@ div.about-paragraph {
   display: inline-flex;
   padding: calc(10px + 0.5vw);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all 0.4s;
+  transition: all 0.8s;
   background-color: black;
   cursor: pointer;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     background-color: white;
     color: black;
   }
@@ -404,25 +390,103 @@ div.about-paragraph {
   display: inline-flex;
   padding: calc(10px + 0.5vw);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all 0.4s;
+  transition: all 0.8s;
   background-color: black;
-
+  cursor: pointer;
+  
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     background-color: white;
     color: black;
   }
 }
 
+
+.project-card {
+  // display: inline-flex;
+  // flex-wrap: wrap;
+  width: 80%;
+  // overflow: hidden;
+  margin-bottom: 100px;
+  margin-left: 20px;
+  margin-right: 100px;
+  
+}
+
+
+.card-direction-column {
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  // display: inline-flex;
+  flex-direction: column;
+  height: calc(20rem + 15vw);
+}
+
+.card-direction-row {
+  display: inline-flex;
+  flex-direction: row;
+  height: 30vw;
+}
+
+.project-card-contents {
+  text-align: center;
+  width: inherit;
+}
+
 .project-header {
-  font-family: 'Prata', serif, cursive;
-  font-size: 8ch;
-  margin-bottom: 70px;
+  font-family: 'moon-light';
+  font-size: calc(2rem + 1vw);
+  line-height: calc(4rem + 1vw);
+  margin: 50px;
+  width: 70%;
+  text-align: left;
+  // margin-bottom: 20px;
+  color: black;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  justify-content: center;
+}
+
+.profile-img {
+  border-radius: 3px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  &-large-size {
+    width: 80%;
+    border-radius: 3px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  &-small-size {
+    width: 95%;
+    border-radius: 3px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+} 
+
+.project-details {
+  width: 100%;
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-family: 'moon-light';
+  font-size: calc(0.5rem + 0.8vw);
+  line-height: calc(0.5rem + 0.8vw);
+  color: black;
+  text-shadow: 0.2px 0.2px 0px rgba(0,0,0,0.2);
+  justify-content: center;
+  vertical-align: center;
+
+  .desc {
+    font-family: 'moon-bold';
+    font-size: calc(0.5rem + 1vw);
+    line-height: calc(0.5rem + 1vw);
+  }
 }
 
 .page {
   height: 100vh;
-  padding: calc(15% + 1.5em) 5% 5%;
+  padding: calc(15% + 1em) 5% 5%;
   overflow-y: auto;
   position: fixed;
   top: 0;
