@@ -22,6 +22,8 @@ export default function Projects(props) {
 
     return (
         <Page background="linear-gradient(90deg, #FFFFFF  0%, #BCBCBC 100%)">
+            <br/>
+            <br/>
             <div className='card-container'>
                 {projects.map(project => {
                     return (

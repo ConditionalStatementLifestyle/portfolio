@@ -200,6 +200,7 @@ ul {
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
+  text-align: center;
 }
 
 .bottom-links {
@@ -409,7 +410,7 @@ div.about-paragraph {
   // overflow: hidden;
   margin-bottom: 100px;
   margin-left: 20px;
-  margin-right: 100px;
+  margin-right: 20px;
   
 }
 
@@ -420,13 +421,13 @@ div.about-paragraph {
   justify-content: center;
   // display: inline-flex;
   flex-direction: column;
-  height: calc(20rem + 15vw);
+  height: calc(10rem + 20vw);
 }
 
 .card-direction-row {
   display: inline-flex;
   flex-direction: row;
-  height: 30vw;
+  height: calc(1rem + 22vw);
 }
 
 .project-card-contents {
@@ -437,8 +438,8 @@ div.about-paragraph {
 .project-header {
   font-family: 'moon-light';
   font-size: calc(2rem + 1vw);
-  line-height: calc(4rem + 1vw);
-  margin: 50px;
+  line-height: calc(2rem + 1vw);
+  margin: 10px;
   width: 70%;
   text-align: left;
   // margin-bottom: 20px;
@@ -452,7 +453,7 @@ div.about-paragraph {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   &-large-size {
-    width: 80%;
+    width: 70%;
     border-radius: 3px;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
@@ -470,7 +471,7 @@ div.about-paragraph {
   padding-left: 15%;
   padding-right: 15%;
   font-family: 'moon-light';
-  font-size: calc(0.5rem + 0.8vw);
+  font-size: calc(0.4rem + 0.5vw);
   line-height: calc(0.5rem + 0.8vw);
   color: black;
   text-shadow: 0.2px 0.2px 0px rgba(0,0,0,0.2);
@@ -479,9 +480,13 @@ div.about-paragraph {
 
   .desc {
     font-family: 'moon-bold';
-    font-size: calc(0.5rem + 1vw);
-    line-height: calc(0.5rem + 1vw);
+    font-size: calc(0.4rem + 0.7vw);
+    line-height: calc(0.4rem + 0.7vw);
   }
+}
+
+.line-break-height {
+  height: 1vw;
 }
 
 .page {

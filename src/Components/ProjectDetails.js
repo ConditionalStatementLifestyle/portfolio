@@ -11,11 +11,16 @@ export default function ProjectModal(props) {
     } = props.projectInfo;
     return (
         <div className='project-details'>
-            <div className='desc'>{description}</div><br></br>
-            <div>Frontend: {frontend}</div><br></br>
-            <div>Backend: {backend}</div><br></br>
-            <div>Technologies & Libraries: {technologies}</div><br></br>
-            <div><a href={url}>Go to demo</a></div><br></br>
+            <div className='desc'>{description}</div>
+            <div className='line-break-height'/>
+            <div>Frontend: {frontend}</div>
+            <div className='line-break-height'/>
+            <div>Backend: {backend}</div>
+            <div className='line-break-height'/>
+            <div>Technologies & Libraries: {technologies}</div>
+            <div className='line-break-height'/>
+            <div><a href={url}>Go to demo</a></div>
+            <div className='line-break-height'/>
         </div>
     )
 }
