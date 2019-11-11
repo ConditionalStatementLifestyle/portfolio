@@ -1,11 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-
-const styleMap = {
-  about: '12%',
-  skills: '45%',
-  projects: '78%'
-}
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { styleMap, EvilName } from './constants';
 
 export default function Navigation() {
 
@@ -38,7 +33,7 @@ export default function Navigation() {
 
   return (
     <div className="navigation">
-      <div className='nav-left-space'>Jon Langkammer</div>
+      <div className='nav-left-space'><EvilName/></div>
       <ul>
         <li className='nav-link one' 
           onClick={() => setCurrentURL(window.location.href)}

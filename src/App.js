@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <Helmet>
-        <style>{'body { background-color: red; }'}</style>
+        <style>{'body { background-image: linear-gradient(90deg, #FFFFFF  0%, #BCBCBC 100%); }'}</style>
       </Helmet>
       <Router>
         <Navbar/>

@@ -1,5 +1,6 @@
-import React from 'react'
-import ProjectModal from '../Components/ProjectModal'
+import React, {useEffect} from 'react';
+import ProjectModal from '../Components/ProjectModal';
+import { Image } from 'semantic-ui-react';
 
 const projectsObject = [
     {
@@ -29,23 +30,25 @@ const projectsObject = [
     }
 ]
 
-export default class Projects extends React.Component {
+export default function Projects(props) {
 
-    render() {
-        return (
-            <div className='card-container'>
-                { projectsObject.map(project => {
-                    return (
-                        <div className='box'>
-                            <div className='spacing' >
-                                <div className='project-header'>{project.name}</div>
-                                <img className='profile-img' alt='oh no' src={project.image}></img>
-                            </div>
-                            <ProjectModal projectInfo={project}/>
+    useEffect(() => {
+        window.scrollTo(0,0)
+    })
+
+    return (
+        <div className='card-container'>
+            { projectsObject.map(project => {
+                return (
+                    <div className='box'>
+                        <div className='spacing' >
+                            <div className='project-header'>{project.name}</div>
+                            <Image className='profile-img' alt='oh no' src={project.image} fluid></Image>
                         </div>
-                    )
-                })}
-            </div>
-        )
-    }
+                        <ProjectModal projectInfo={project}/>
+                    </div>
+                )
+            })}
+        </div>
+    )
 }

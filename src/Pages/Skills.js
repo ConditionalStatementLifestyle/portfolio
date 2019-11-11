@@ -1,14 +1,4 @@
-import React from 'react'
-
-import back0 from '../Pictures/back0.jpg'
-import back1 from '../Pictures/back1.jpg'
-import jon from '../Pictures/jon2.jpg'
-
-var images = {
-  0: `url(${back0})`,
-  1: `url(${back1})`,
-  2: `url(${jon})`
-}
+import React, {useEffect} from 'react'
 
 // var sectionStyle = {
 //   width: "80%",
@@ -21,6 +11,10 @@ var images = {
 // };
 
 export default function Home() {
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  })
 
     return (
         <div className='home'>
