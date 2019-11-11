@@ -1,4 +1,7 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react';
+import Page from '../Components/Page';
+import { languages, technologies } from '../Components/constants';
+
 
 // var sectionStyle = {
 //   width: "80%",
@@ -10,68 +13,39 @@ import React, {useEffect} from 'react'
 //   position: 'relative'
 // };
 
-export default function Home() {
+export default function Home(props) {
 
   useEffect(() => {
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
   })
 
-    return (
-        <div className='home'>
-          <div className='home-text-container'>
-            <div className='left-home-container'>
-              <div className='skills-title'>
-                Languages & Frameworks
-              </div>
-              <div className='language-list-item'>
-                JavaScript
-              </div>
-              <div className='language-list-item'>
-                React
-              </div>
-              <div className='language-list-item'>
-                Ruby
-              </div>
-              <div className='language-list-item'>
-                Ruby on Rails
-              </div>
-              <div className='language-list-item'>
-                HTML
-              </div>
-              <div className='language-list-item'>
-                CSS
-              </div>
-              <div className='language-list-item'>
-                PostgreSQL
-              </div>
-            </div>
-            <div className='right-home-container'>
-              <div className='skills-title'>
-                Technologies & Libraries 
-              </div>
-              <div className='language-list-item'>
-                Semantic UI
-              </div>
-              <div className='language-list-item'>
-                Action Cable (Web Sockets)
-              </div>
-              <div className='language-list-item'>
-                Chart.js
-              </div>
-              <div className='language-list-item'>
-                React CSS Transition Group
-              </div>
-              <div className='language-list-item'>
-                Web Scraping
-              </div>
-              <div className='language-list-item'>
-                React Router
-              </div>
-              <div className='language-list-item'>
-                React Pose
-              </div>
-            </div>
+  return (
+    <Page background="linear-gradient(0deg, #FFFFFF  0%, #BCBCBC 100%)">
+      <div className='home'>
+        <div className='home-text-container'>
+          <div className='skills-title'>
+            Languages & Frameworks
           </div>
+          {languages.map(language => {
+            return (
+              <div className='language-list-item'>
+                {language}
+              </div>
+            )
+          })}
+          <hr className='hr-page-long'/>
+          <div className='skills-title'>
+            Technologies & Libraries
+            </div>
+          {technologies.map(technology => {
+            return (
+              <div className='technology-list-item'>
+                {technology}
+              </div>
+            )
+          })}
         </div>
-    )
+      </div>
+    </Page>
+  )
 }
