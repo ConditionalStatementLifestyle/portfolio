@@ -12,7 +12,6 @@ export default function Tech(props) {
 
   return (
     <Page background="linear-gradient(0deg, #FFFFFF  0%, #BCBCBC 100%)">
-      <br />
       <div className='home-text-container'>
         <div className='skills-title'>
           Languages & Frameworks
