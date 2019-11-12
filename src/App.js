@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.scss'
 import { Tech, About, Projects } from './Pages/index';
 import NotFound from './Pages/NotFound'
@@ -14,13 +14,23 @@ import {
 
 function App() {
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener('resize', updateWidth);
+  })
+
+  const updateWidth = () => {
+    setWindowWidth(window.innerWidth)
+  }
+
   return (
     <div>
       <Helmet>
         <style>{'body { background-image: linear-gradient(90deg, #FFFFFF  0%, #BCBCBC 100%); }'}</style>
       </Helmet>
       <Router>
-        <Navbar />
+        <Navbar windowWidth={windowWidth}/>
         <Route
           render={({ location }) => {
             const { pathname } = location;
@@ -30,8 +40,8 @@ function App() {
                   key={pathname}
                   classNames="page"
                   timeout={{
-                    enter: 1000,
-                    exit: 1000
+                    enter: 750,
+                    exit: 750
                   }}
                 >
                   <Route
@@ -39,9 +49,9 @@ function App() {
                     render={() => (
                       <Switch>
                         <Route exact path='/' render={() => <Redirect to='/about' />} />
-                        <Route exact path='/tech' render={() => <Tech />} />
-                        <Route exact path='/about' render={() => <About />} />
-                        <Route exact path='/projects' render={() => <Projects />} />
+                        <Route exact path='/tech' render={() => <Tech windowWidth={windowWidth}/>} />
+                        <Route exact path='/about' render={() => <About windowWidth={windowWidth}/>} />
+                        <Route exact path='/projects' render={() => <Projects windowWidth={windowWidth}/>} />
                         <Route exact path='/404' render={() => <NotFound />} />
                         <Route path='*' render={() => <Redirect to='/404' />} />
                       </Switch>

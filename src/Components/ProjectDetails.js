@@ -9,6 +9,7 @@ export default function ProjectModal(props) {
         technologies,
         url
     } = props.projectInfo;
+    
     return (
         <div className='project-details'>
             <div className='desc'>{description}</div>

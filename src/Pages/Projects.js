@@ -6,18 +6,12 @@ import { projects } from '../Components/constants'
 
 export default function Projects(props) {
 
-    const [viewType, setViewType] = useState(window.innerWidth > 1000 ? 'card-direction-row' : 'card-direction-column');
-
     useEffect(() => {
         window.scrollTo(0, 0)
-        window.addEventListener('resize', updateWidth);
     })
-
-
-    const updateWidth = () => {
-        const viewType = window.innerWidth > 1000 ? 'card-direction-row' : 'card-direction-column';
-        setViewType(viewType);
-    }
+    
+    const { windowWidth } = props;
+    const viewType = windowWidth > 1000 ? 'card-direction-row' : 'card-direction-column';
 
     return (
         <Page background="linear-gradient(90deg, #FFFFFF  0%, #BCBCBC 100%)">
@@ -44,6 +38,7 @@ export default function Projects(props) {
                     )
                 })}
             </div>
+            {windowWidth < 500 && <><br/><br/><br/></>}
         </Page>
     )
 }

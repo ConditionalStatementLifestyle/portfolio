@@ -2,11 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styleMap, EvilName, navConfigs } from './constants';
 
-export default function Navigation() {
+export default function Navigation(props) {
 
   const [currentURL, setCurrentURL] = useState(window.location.href);
   const [lineStyle, setLineStyle] = useState({ marginLeft: '12%' });
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     if (currentURL.includes('about')) {
@@ -17,14 +16,6 @@ export default function Navigation() {
       setStyle('78%');
     }
   }, [currentURL])
-
-  useEffect(() => {
-    window.addEventListener('resize', updateWidth);
-  })
-
-  const updateWidth = () => {
-    setWindowWidth(window.innerWidth)
-  }
 
   const setStyle = (marginLeft) => {
     setLineStyle({ marginLeft });
@@ -39,6 +30,8 @@ export default function Navigation() {
       })
     }
   }
+
+  const { windowWidth } = props;
 
   return (
     <div className="navigation">
@@ -60,8 +53,7 @@ export default function Navigation() {
         })}
         <hr className='hr' style={lineStyle} />
       </ul>
-      {windowWidth >
-        500 && <div className='nav-right-space'></div>}
+      {windowWidth > 500 && <div className='nav-right-space'></div>}
     </div>
   )
 }
