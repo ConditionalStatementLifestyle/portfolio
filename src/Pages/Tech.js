@@ -9,10 +9,10 @@ export default function Tech(props) {
   })
 
   const { windowWidth } = props;
-  
+
   return (
     <Page background="linear-gradient(0deg, #FFFFFF  0%, #BCBCBC 100%)">
-      <br/>
+      <br />
       <div className='home-text-container'>
         <div className='skills-title'>
           Languages & Frameworks
@@ -40,7 +40,7 @@ export default function Tech(props) {
       <br></br>
       <br></br>
       <br></br>
-      {windowWidth < 500 && <><br/><br/><br/></>}
+      {windowWidth < 500 && <><br /><br /><br /></>}
     </Page>
   )
 }

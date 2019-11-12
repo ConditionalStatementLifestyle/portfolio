@@ -7,10 +7,10 @@ export const styleMap = {
   projects: '78%'
 }
 
-export const EvilName = () => <NavName style={nameStyle}>Jon <br/> Langkammer</NavName>
+export const EvilName = () => <NavName style={nameStyle}>Jon <br /> Langkammer</NavName>
 
 export const languages = [
-  'React/Redux', 
+  'React/Redux',
   'Ruby on Rails',
   'JavaScript',
   'Cypress.js',
@@ -38,32 +38,32 @@ export const technologies = [
 
 export const projects = [
   {
-      name: 'Hop Centricity',
-      frontend: 'React.js',
-      backend: 'Ruby on Rails',
-      description: 'An interactive beer rating web app, dedicated to IPAs',
-      url: 'https://mysterious-reaches-84669.herokuapp.com/login',
-      image: 'https://github.com/ConditionalStatementLifestyle/HopCentricity-React/raw/master/src/Pictures/ScreenShot.png',
-      imageSize: 'large',
-      technologies: 'React Router, Semantic UI, React-Pose, React CSS Transition Group',
+    name: 'Hop Centricity',
+    frontend: 'React.js',
+    backend: 'Ruby on Rails',
+    description: 'An interactive beer rating web app, dedicated to IPAs',
+    url: 'https://mysterious-reaches-84669.herokuapp.com/login',
+    image: 'https://github.com/ConditionalStatementLifestyle/HopCentricity-React/raw/master/src/Pictures/ScreenShot.png',
+    imageSize: 'large',
+    technologies: 'React Router, Semantic UI, React-Pose, React CSS Transition Group',
   }, {
-      name: 'React Pictionary',
-      frontend: 'React.js',
-      backend: 'Ruby on Rails utilizing Action Cable',
-      description: 'Live drawing pictionary game',
-      url: 'https://react-pictionary.herokuapp.com/',
-      image: 'https://raw.githubusercontent.com/jyang81/pictionary-react/master/react-pictionary-screenshot.png',
-      imageSize: 'small',
-      technologies: 'Semantic UI, Web Sockets'
+    name: 'React Pictionary',
+    frontend: 'React.js',
+    backend: 'Ruby on Rails utilizing Action Cable',
+    description: 'Live drawing pictionary game',
+    url: 'https://react-pictionary.herokuapp.com/',
+    image: 'https://raw.githubusercontent.com/jyang81/pictionary-react/master/react-pictionary-screenshot.png',
+    imageSize: 'small',
+    technologies: 'Semantic UI, Web Sockets'
   }, {
-      name: 'Invest Big',
-      frontend: 'Vanilla JavaScript',
-      backend: 'Ruby on Rails',
-      description: 'Simple compound interest modeling web app',
-      url: 'https://secret-mesa-58919.herokuapp.com/',
-      image: 'https://github.com/ConditionalStatementLifestyle/InvestmentAnalyzer/raw/master/InvestBig.png',
-      imageSize: 'small',
-      technologies: 'Chart.js'
+    name: 'Invest Big',
+    frontend: 'Vanilla JavaScript',
+    backend: 'Ruby on Rails',
+    description: 'Simple compound interest modeling web app',
+    url: 'https://secret-mesa-58919.herokuapp.com/',
+    image: 'https://github.com/ConditionalStatementLifestyle/InvestmentAnalyzer/raw/master/InvestBig.png',
+    imageSize: 'small',
+    technologies: 'Chart.js'
   }
 ]
 
