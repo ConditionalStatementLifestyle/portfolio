@@ -34,7 +34,7 @@ export default function About(props) {
                 Besides that, I am a music lover/musician and I thoroughly enjoy playing N64 games with others or playing a nice round of Halo 2, in 
                 addition to being a hobbyist photographer.
             </div> */}
-            {windowWidth < 500 && <><br/><br/><br/></>}
+            {windowWidth < 500 && <><br/><br/><br/><br/><br/></>}
         </Page >
     )
 }
