@@ -67,6 +67,21 @@ export const projects = [
   }
 ]
 
+export const navConfigs = [
+  {
+    style: '12%',
+    name: 'about'
+  },
+  {
+    style: '45%',
+    name: 'tech'
+  },
+  {
+    style: '78%',
+    name: 'projects'
+  },
+]
+
 const nameStyle = {
   marginLeft: '5px',
   marginBottom: '10px',

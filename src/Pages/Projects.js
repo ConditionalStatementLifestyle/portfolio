@@ -13,6 +13,7 @@ export default function Projects(props) {
         window.addEventListener('resize', updateWidth);
     })
 
+
     const updateWidth = () => {
         const viewType = window.innerWidth > 1000 ? 'card-direction-row' : 'card-direction-column';
         setViewType(viewType);
@@ -22,6 +23,8 @@ export default function Projects(props) {
 
     return (
         <Page background="linear-gradient(90deg, #FFFFFF  0%, #BCBCBC 100%)">
+            <br/>
+            <br/>
             <br/>
             <br/>
             <div className='card-container'>

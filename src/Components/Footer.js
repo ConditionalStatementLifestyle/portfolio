@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function BottomLinks() {
+export default function Footer() {
 
     return (
         <div className="bottom-links">
@@ -14,7 +14,7 @@ export default function BottomLinks() {
                     <i className="github icon"></i>
                 </button>
             </a><br></br>
-            <div>
+            <div className='footer-text'>
                 jlangkammer@gmail.com
             </div>
         </div>

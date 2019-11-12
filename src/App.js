@@ -6,7 +6,7 @@ import Projects from './Pages/Projects'
 import NotFound from './Pages/NotFound'
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
 import Navbar from './Components/Navbar'
-import BottomLinks from './Components/BottomLinks';
+import Footer from './Components/Footer';
 import Helmet from 'react-helmet';
 import { 
   CSSTransition, 
@@ -55,7 +55,7 @@ function App() {
           }}
         />
       </Router>
-      <BottomLinks />
+      <Footer />
     </div>
   );
 }

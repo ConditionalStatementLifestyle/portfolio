@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { styleMap, EvilName } from './constants';
+import { styleMap, EvilName, navConfigs } from './constants';
 
 export default function Navigation() {
 
@@ -46,31 +46,22 @@ export default function Navigation() {
         <EvilName />
       </div>}
       <ul>
-        <li className='nav-link one'
-          onClick={() => setCurrentURL(window.location.href)}
-          onMouseEnter={() => setStyle('12%', true)}
-          onMouseLeave={() => determineStyle('about')}
-        >
-          <Link to="/about" className='nav-links' >About</Link>
-        </li>
-        <li className='nav-link two'
-          onClick={() => setCurrentURL(window.location.href)}
-          onMouseEnter={() => setStyle('45%', true)}
-          onMouseLeave={() => determineStyle('skills')}
-        >
-          <Link to="/skills" className='nav-links' >Skills</Link>
-        </li>
-        <li className='nav-link three'
-          onClick={() => setCurrentURL(window.location.href)}
-          onMouseEnter={() => setStyle('78%', true)}
-          onMouseLeave={() => determineStyle('projects')}
-        >
-          <Link to="/projects" className='nav-links' >Projects</Link>
-        </li>
+        {navConfigs.map(navItem => {
+          const { style, name } = navItem;
+          return (
+            <li className='nav-link'
+              onClick={() => setCurrentURL(window.location.href)}
+              onMouseEnter={() => setStyle(style, true)}
+              onMouseLeave={() => determineStyle(name)}
+            >
+              <Link to="/about" className='nav-links' >{name}</Link>
+            </li>
+          )
+        })}
         <hr className='hr' style={lineStyle} />
       </ul>
       {windowWidth >
-         500 && <div className='nav-right-space'></div>}
+        500 && <div className='nav-right-space'></div>}
     </div>
   )
 }

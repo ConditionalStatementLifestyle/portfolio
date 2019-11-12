@@ -30,6 +30,9 @@ export default class About extends React.Component {
     render() {
         return (
             <Page background="linear-gradient(270deg, #FFFFFF  0%, #BCBCBC 100%)">
+                <br/>
+                <br/>
+                <br/>
                 <div className='intro-paragraph'>
                     Hi, my name is Jon. I'm a Front End Developer living in Seattle, WA.
                     </div>
