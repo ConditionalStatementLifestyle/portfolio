@@ -1,8 +1,6 @@
 import React from 'react';
 import { Image } from 'semantic-ui-react';
 import jon from '../Pictures/jonprof2.jpeg';
-import { Icon, Transition } from 'semantic-ui-react';
-import { Link } from "react-scroll";
 import Page from '../Components/Page';
 
 export default class About extends React.Component {

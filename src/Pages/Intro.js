@@ -18,8 +18,13 @@ class Intro extends React.Component {
     }
 
     toggleVisibility = () => {
-        let visible = !this.state.visible
-        this.setState({ visible }) 
+        let visible = !this.state.visible;
+        this.setState({ visible });
+    }
+
+    //WARNING! To be deprecated in React v17. Use componentDidUpdate instead.
+    componentWillUnmount() {
+        clearInterval(this.toggleVisibility);
     }
     
     render() {

@@ -16,7 +16,7 @@ export default function Tech(props) {
           </div>
         {languages.map(language => {
           return (
-            <div className='language-list-item'>
+            <div key={language} className='language-list-item'>
               {language}
             </div>
           )
@@ -27,7 +27,7 @@ export default function Tech(props) {
             </div>
         {technologies.map(technology => {
           return (
-            <div className='technology-list-item'>
+            <div key={technology} className='technology-list-item'>
               {technology}
             </div>
           )

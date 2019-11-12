@@ -49,7 +49,7 @@ export default function Navigation() {
         {navConfigs.map(navItem => {
           const { style, name } = navItem;
           return (
-            <li className='nav-link'
+            <li key={name} className='nav-link'
               onClick={() => setCurrentURL(window.location.href)}
               onMouseEnter={() => setStyle(style, true)}
               onMouseLeave={() => determineStyle(name)}
