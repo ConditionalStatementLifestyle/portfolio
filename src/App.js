@@ -1,8 +1,6 @@
 import React from 'react'
 import './App.scss'
-import Skills from './Pages/Skills'
-import About from './Pages/About'
-import Projects from './Pages/Projects'
+import { Tech, About, Projects } from './Pages/index';
 import NotFound from './Pages/NotFound'
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
 import Navbar from './Components/Navbar'
@@ -41,7 +39,7 @@ function App() {
                     render={() => (
                       <Switch>
                         <Route exact path='/' render={() => <Redirect to='/about' />} />
-                        <Route exact path='/skills' render={() => <Skills />} />
+                        <Route exact path='/tech' render={() => <Tech />} />
                         <Route exact path='/about' render={() => <About />} />
                         <Route exact path='/projects' render={() => <Projects />} />
                         <Route exact path='/404' render={() => <NotFound />} />

@@ -11,7 +11,7 @@ export default function Navigation() {
   useEffect(() => {
     if (currentURL.includes('about')) {
       setStyle('12%');
-    } else if (currentURL.includes('skills')) {
+    } else if (currentURL.includes('tech')) {
       setStyle('45%');
     } else {
       setStyle('78%');
@@ -54,7 +54,7 @@ export default function Navigation() {
               onMouseEnter={() => setStyle(style, true)}
               onMouseLeave={() => determineStyle(name)}
             >
-              <Link to="/about" className='nav-links' >{name}</Link>
+              <Link to={`/${name}`} className='nav-links' >{name}</Link>
             </li>
           )
         })}

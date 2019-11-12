@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Page from '../Components/Page';
 import { languages, technologies } from '../Components/constants';
 
-export default function Home(props) {
+export default function Tech(props) {
 
   useEffect(() => {
     window.scrollTo(0, 0)
