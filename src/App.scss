@@ -396,11 +396,75 @@ div.about-paragraph {
   color: black;
   text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
   justify-content: center;
+  
+  .header-text {
+    cursor: pointer;
+  }
+
+}
+
+.url-modal {
+  &-visible {
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    color: black;
+    transition: backdrop-filter 1s ease;
+    z-index: 100;
+    padding:20vw;
+    padding-top:15vw;
+    text-align: center;
+  }
+
+  &-hidden {
+    opacity: 0;
+    z-index: -1;
+    transition: backdrop-filter 1s ease;
+    height: 0;
+    backdrop-filter: blur(0);
+  }
+}
+
+.url-links {
+
+  &-visible {
+    z-index: 1000;
+    font-family: "Poiret One";
+    font-size: calc(2rem + 1vw);
+    line-height: calc(2rem + 1vw);
+    filter: blur(0);
+    text-shadow: 0.4px 0.4px 0px rgb(255, 255, 255);
+    display: block;
+    // position: fixed;
+    margin:3vw;
+    color: black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    
+    &:hover {
+      transition: color 0.5s ease-in-out;
+      color:red;
+    }
+  }
+  
+
+  &-hidden {
+    width:0px;
+    opacity: 0;
+    z-index: -10;
+    transition: opacity 1s ease;
+    position: fixed;
+    font-family: "Poiret One";
+    font-size: calc(2rem + 1vw);
+    line-height: calc(2rem + 1vw);
+    color: black
+  }
 }
 
 .profile-img {
-  border-radius: 3px;
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   &-large-size {
     float: left;
@@ -436,6 +500,12 @@ div.about-paragraph {
     font-family: "Poiret One";
     font-size: calc(0.5rem + 0.8vw);
     line-height: calc(0.5rem + 0.7vw);
+  }
+
+  .demo-link {
+    z-index: 10;
+    cursor: pointer;
+    color: black;
   }
 }
 

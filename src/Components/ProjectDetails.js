@@ -7,7 +7,6 @@ export default function ProjectModal(props) {
         frontend,
         backend,
         technologies,
-        url
     } = props.projectInfo;
     
     return (
@@ -19,8 +18,6 @@ export default function ProjectModal(props) {
             <div>Backend: {backend}</div>
             <div className='line-break-height'/>
             <div>Technologies & Libraries: {technologies}</div>
-            <div className='line-break-height'/>
-            <div><a href={url}>Go to demo</a></div>
             <div className='line-break-height'/>
         </div>
     )
