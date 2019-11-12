@@ -12,8 +12,7 @@ export default function Project({ viewType, project }) {
         <div key={name} className={`project-card ${viewType}`}>
             <div className='project-header'>
                 <span className='header-text'
-                    onClick={() => setVisible('visible')}
-                    onHover={() => setTimeout(() => setVisible('visible'), 1000)}>
+                    onClick={() => setVisible('visible')}>
                     {name}
                 </span>
             </div>
@@ -28,9 +27,9 @@ export default function Project({ viewType, project }) {
                 </Reveal>
             </div>
             <div className={`url-modal-${isVisible}`}>
-                    <a className={`url-links-${isVisible}`} href={url}>Take me to the demo!</a>
-                    <hr className='hr-page-long' />
-                    <div className={`url-links-${isVisible}`} onClick={() => setVisible('hidden')}>Close</div>
+                <span><a className={`url-links-${isVisible}`} href={url}>Take me to the demo!</a></span>
+                <hr className='hr-page-long' />
+                <span className={`url-links-${isVisible}`} onClick={() => setVisible('hidden')}>Close</span>
             </div>
         </div>
     )

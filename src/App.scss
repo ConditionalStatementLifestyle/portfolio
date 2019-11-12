@@ -222,8 +222,8 @@ ul {
 .skills-title {
   // font-family: 'moon-light';
   font-family: "Poiret One";
-  font-size: calc(10px + 2vw);
-  line-height: calc(30px + 2vw);
+  font-size: calc(2rem + 1vw);
+  line-height: calc(2rem + 1vw);
   margin-bottom: 20px;
   margin-top: 50px;
   color: black;
@@ -312,8 +312,6 @@ div.about-paragraph {
 
 %list-item {
   font-size: calc(12px + 0.5vw);
-  // font-family: 'Prata', serif;
-  // font-family: 'moon 2.0';
   font-family: "Poiret One";
   margin: 10px;
   color: white;
@@ -399,6 +397,13 @@ div.about-paragraph {
   
   .header-text {
     cursor: pointer;
+    display: inline-block;
+    transition: all 1s ease;
+    
+    &:hover {
+      color: rgb(99, 99, 99);
+      transform: scale(1.03);
+    }
   }
 
 }
@@ -414,8 +419,8 @@ div.about-paragraph {
     color: black;
     transition: backdrop-filter 1s ease;
     z-index: 100;
-    padding:20vw;
-    padding-top:15vw;
+    padding:100px;
+    padding-top:25vw;
     text-align: center;
   }
 
@@ -437,8 +442,6 @@ div.about-paragraph {
     line-height: calc(2rem + 1vw);
     filter: blur(0);
     text-shadow: 0.4px 0.4px 0px rgb(255, 255, 255);
-    display: block;
-    // position: fixed;
     margin:3vw;
     color: black;
     transition: all 0.5s ease;
@@ -446,7 +449,7 @@ div.about-paragraph {
     
     &:hover {
       transition: color 0.5s ease-in-out;
-      color:red;
+      color:rgb(116, 116, 116);
     }
   }
   
@@ -487,8 +490,8 @@ div.about-paragraph {
   padding-right: 30%;
   // font-family: 'moon-light';
   font-family: "Poiret One";
-  font-size: calc(0.4rem + 0.8vw);
-  line-height: calc(0.5rem + 0.8vw);
+  font-size: calc(0.9rem + 0.8vw);
+  line-height: calc(0.9rem + 0.8vw);
   color: black;
   text-shadow: 0.2px 0.2px 0px rgba(0,0,0,0.2);
   justify-content: left;
@@ -498,8 +501,8 @@ div.about-paragraph {
   .desc {
     font-weight: bold;
     font-family: "Poiret One";
-    font-size: calc(0.5rem + 0.8vw);
-    line-height: calc(0.5rem + 0.7vw);
+    font-size: calc(0.9rem + 0.9vw);
+    line-height: calc(0.9rem + 0.9vw);
   }
 
   .demo-link {
@@ -510,7 +513,7 @@ div.about-paragraph {
 }
 
 .line-break-height {
-  height: 1vw;
+  height: 2vw;
 }
 
 .page {
