@@ -84,7 +84,7 @@ export const navConfigs = [
 
 const nameStyle = {
   marginLeft: '5px',
-  marginBottom: '10px',
+  marginBottom: '5px',
   cursor: 'pointer',
   textAlign: 'center',
   lineHeight: 'calc(15px + 1vw)',
