@@ -2,13 +2,11 @@ import React, { useEffect } from 'react';
 import Page from '../Components/Page';
 import { languages, technologies } from '../Components/constants';
 
-export default function Tech(props) {
+export default function Tech({ windowWidth }) {
 
   useEffect(() => {
     window.scrollTo(0, 0)
   })
-
-  const { windowWidth } = props;
 
   return (
     <Page background="linear-gradient(0deg, #FFFFFF  0%, #BCBCBC 100%)">

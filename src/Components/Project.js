@@ -12,7 +12,9 @@ export default function Project({ viewType, project }) {
         <div key={name} className={`project-card ${viewType}`}>
             <div className='project-header'>
                 <span className='header-text'
-                    onClick={() => setVisible('visible')}>
+                    onClick={() => {
+                        setVisible('visible')
+                    }}>
                     {name}
                 </span>
             </div>

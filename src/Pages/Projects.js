@@ -3,13 +3,12 @@ import Project from '../Components/Project';
 import Page from '../Components/Page';
 import { projects } from '../Components/constants'
 
-export default function Projects(props) {
+export default function Projects({ windowWidth, play }) {
 
     useEffect(() => {
         window.scrollTo(0, 0)
     })
 
-    const { windowWidth } = props;
     const viewType = windowWidth > 1000 ? 'card-direction-row' : 'card-direction-column';
 
     return (

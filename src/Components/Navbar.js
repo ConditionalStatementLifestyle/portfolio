@@ -31,11 +31,11 @@ export default function Navigation(props) {
     }
   }
 
-  const { windowWidth } = props;
+  const { windowWidth, play } = props;
 
   return (
     <div className="navigation">
-      {windowWidth > 500 && <div className='nav-left-space'>
+      {windowWidth > 500 && <div className='nav-left-space' onClick={play}>
         <EvilName />
       </div>}
       <ul>
@@ -43,9 +43,9 @@ export default function Navigation(props) {
           const { style, name } = navItem;
           return (
             <li key={name} className='nav-link'
-              onClick={() => setCurrentURL(window.location.href)}
               onMouseEnter={() => setStyle(style, true)}
               onMouseLeave={() => determineStyle(name)}
+              onClick={() => setCurrentURL(window.location.href)}
             >
               <Link to={`/${name}`} className='nav-links' >{name}</Link>
             </li>
