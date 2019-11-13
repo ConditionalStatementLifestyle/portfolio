@@ -340,7 +340,7 @@ div.about-paragraph {
   // flex-wrap: wrap;
   width: 80%;
   // overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: calc(60px + 5vw);
   margin-left: 20px;
   margin-right: 20px;
   
@@ -468,31 +468,63 @@ div.about-paragraph {
   }
 } 
 
-.project-details {
-  width: 100%;
-  text-align: left;
-  padding-left: 5%;
-  padding-right: 30%;
-  font-family: "Poiret One";
-  font-size: calc(0.9rem + 0.8vw);
-  line-height: calc(0.9rem + 0.8vw);
-  color: black;
-  text-shadow: 0.2px 0.2px 0px rgba(0,0,0,0.2);
-  justify-content: left;
-  vertical-align: left;
-  float: left;
-
-  .desc {
-    font-weight: bold;
+@media only screen and (max-width: 499px) {
+  .project-details {
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 30%;
     font-family: "Poiret One";
-    font-size: calc(0.9rem + 0.9vw);
-    line-height: calc(0.9rem + 0.9vw);
-  }
-
-  .demo-link {
-    z-index: 10;
-    cursor: pointer;
+    font-size: calc(0.4rem + 0.7vw);
+    line-height: calc(0.4rem + 0.7vw);
     color: black;
+    text-shadow: 0.2px 0.2px 0px rgba(0,0,0,0.2);
+    justify-content: left;
+    vertical-align: left;
+    float: left;
+  
+    .desc {
+      font-weight: bold;
+      font-family: "Poiret One";
+      font-size: calc(0.4rem + 0.7vw);
+      line-height: calc(0.4rem + 0.7vw);
+    }
+  
+    .demo-link {
+      z-index: 10;
+      cursor: pointer;
+      color: black;
+    }
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .project-details {
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 30%;
+    font-family: "Poiret One";
+    font-size: calc(0.8rem + 0.7vw);
+    line-height: calc(0.8rem + 0.7vw);
+    color: black;
+    text-shadow: 0.2px 0.2px 0px rgba(0,0,0,0.2);
+    justify-content: left;
+    vertical-align: left;
+    float: left;
+  
+    .desc {
+      font-weight: bold;
+      font-family: "Poiret One";
+      font-size: calc(0.8rem + 0.7vw);
+      line-height: calc(0.8rem + 0.7vw);
+    }
+  
+    .demo-link {
+      z-index: 10;
+      cursor: pointer;
+      color: black;
+    }
   }
 }
 

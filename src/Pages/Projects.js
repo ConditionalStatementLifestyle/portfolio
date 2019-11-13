@@ -3,7 +3,7 @@ import Project from '../Components/Project';
 import Page from '../Components/Page';
 import { projects } from '../Components/constants'
 
-export default function Projects({ windowWidth, play }) {
+export default function Projects({ windowWidth }) {
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -18,12 +18,13 @@ export default function Projects({ windowWidth, play }) {
                 {projects.map(project => {
                     return (
                         <Project
+                            key={project.name}
                             project={project}
                             viewType={viewType} />
                     )
                 })}
             </div>
-            {windowWidth < 500 && <><br /><br /><br /></>}
+            <><br /><br /><br /><br /><br /><br /></>
         </Page>
     )
 }
