@@ -1,19 +1,21 @@
-import React from 'react'
+import React from 'react';
+import { footerIcons } from './constants';
 
 export default function Footer() {
 
     return (
         <div className="bottom-links">
-            <a href='https://www.linkedin.com/in/jon-langkammer/'>
-                <button className="ui circular linkedin icon button">
-                    <i className="linkedin icon"></i>
-                </button>
-            </a>
-            <a href='https://github.com/ConditionalStatementLifestyle'>
-                <button className="ui circular github icon button">
-                    <i className="github icon"></i>
-                </button>
-            </a><br></br>
+            {footerIcons.map(icon => {
+                const { href, className } = icon;
+                return (
+                    <a href={href}>
+                        <button className="ui circular linkedin icon button black">
+                            <i className={className}></i>
+                        </button>
+                    </a>
+                )
+            })}
+            <br></br>
             <div className='footer-text'>
                 jlangkammer@gmail.com
             </div>

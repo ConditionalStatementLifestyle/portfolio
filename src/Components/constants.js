@@ -84,6 +84,21 @@ export const navConfigs = [
   },
 ]
 
+export const footerIcons = [
+  {
+    href: 'https://www.linkedin.com/in/jon-langkammer/',
+    className: 'linkedin icon'
+  },
+  {
+    href: 'https://github.com/ConditionalStatementLifestyle',
+    className: 'github icon'
+  },
+  {
+    href: 'https://gitlab.com/ConditionalStatementLifestyle',
+    className: 'gitlab icon'
+  }
+]
+
 const nameStyle = {
   marginLeft: '5px',
   marginBottom: '5px',
