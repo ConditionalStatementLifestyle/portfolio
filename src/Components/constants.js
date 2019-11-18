@@ -3,7 +3,7 @@ import posed from 'react-pose';
 
 export const styleMap = {
   about: '12%',
-  skills: '45%',
+  tech: '45%',
   projects: '78%'
 }
 
@@ -33,7 +33,9 @@ export const technologies = [
   'React Router',
   'React Pose',
   'Google OAuth',
-  'HTML Canvas'
+  'HTML Canvas',
+  'Heroku',
+  'Azure'
 ]
 
 export const projects = [

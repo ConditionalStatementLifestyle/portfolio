@@ -43,7 +43,7 @@ export default function Navigation(props) {
           const { style, name } = navItem;
           return (
             <li key={name} className='nav-link'
-              onMouseEnter={() => setStyle(style, true)}
+              onMouseEnter={() => setStyle(style)}
               onMouseLeave={() => determineStyle(name)}
               onClick={() => setCurrentURL(window.location.href)}
             >
