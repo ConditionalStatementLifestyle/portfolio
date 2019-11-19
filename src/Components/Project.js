@@ -12,16 +12,18 @@ export default function Project({ viewType, project }) {
         <div key={name} className={`project-card ${viewType}`}>
             <div className='project-header'>
                 <span className='header-text'
-                    onClick={() => {
-                        setVisible('visible')
-                    }}>
+                    onClick={() => setVisible('visible')}>
                     {name}
                 </span>
             </div>
             <div className='project-card-contents'>
                 <Reveal animated='fade'>
                     <Reveal.Content visible>
-                        <Image className={`profile-img-${imageSize}-size`} alt='oh no' src={image} centered></Image>
+                        <Image 
+                            className={`profile-img-${imageSize}-size`}
+                            alt='oh no' 
+                            src={image}
+                            centered/>
                     </Reveal.Content>
                     <Reveal.Content hidden>
                         <ProjectDetails projectInfo={project} />
